@@ -1,0 +1,212 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    /* border: 1px solid red; */
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+body {
+    background-color: #13131D;
+}
+
+.nav-container {
+    height: 15vh;
+    width: 100%;
+    margin-top: 40px;
+}
+nav {
+    display: flex;
+}
+.logo {
+    margin-right:30em ;
+}
+.logo h3 {
+    font-size: 2rem;
+    color: #fff;
+}
+nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+nav ul li {
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: aqua;
+    padding: 10px 15px;
+    background-color: #242431;
+    border-radius: 20px 10px;
+    font-size: 20px;
+}
+nav ul li:hover {
+    transform: scale(1.1);
+    transition: all ease .5s;
+}
+#roullete {
+    height: 60vh;
+    margin-top: 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+    justify-content: center;
+
+}
+.vid {
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#Players {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr) ;
+    grid-column-gap: 10px;
+}
+  
+/* apply styles to child elements */
+#Players > div:nth-child(odd) {
+    height: 80px;
+    background-color: whitesmoke;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+}
+#Players > div:nth-child(even) {
+    height: 80px;
+    background-color: #242431;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#Players > div:hover {
+    transform: scale(1.05);
+    transition: all ease .5s;
+    border-radius: 20px;
+}
+#Players > div:nth-child(even) {
+    color: whitesmoke;
+}
+
+.lottery-number {
+    margin-top: 10px;
+}
+
+.lottery-number > h3 {
+    font-size: 30px;
+}
+
+.winners-container {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-name {
+    font-size: 20px;
+    margin: 0 20px;
+    padding: 30px;
+    background-color: whitesmoke ;
+    border-radius: 20px;
+}
+.player-name:hover {
+    transform: scale(1.05);
+    transition: all ease-out .5s;
+}
+
+.prize {
+    color: aqua;
+    font-size: 20px;
+    margin: 0 20px;
+}
+
+.vote-container {
+    height: 50vh;
+    width: 100%;
+    display: block;
+}
+.vote-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vote-text > h3 {
+    color: whitesmoke;
+    font-size: 30px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+
+.voting > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.voting > div > a > button {
+    width: 250px;
+    height: 40px;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: aquamarine;
+    margin: 5px;
+}
+
+.voting > div > a > button:hover {
+    transform: scale(1.05);
+    transition: all ease-in-out 0.5s;
+}
+
+.footer-container {
+    height: 15vh;
+    background-color: #101018;
+    margin-top: 20px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ip {
+    color: #242431;
+    margin-left: 50px;
+
+}
+
+.copyright {
+    color: whitesmoke;
+    margin-right: 170px;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+.discord {
+    display: flex;
+    align-items: center;
+}
+
+.discord > a{
+    color: white;
+    margin-right: 50px;
+    font-size: 50px;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.discord > a:hover {
+    background-color: #5685f2;
+    transform: rotate(-360deg);
+    transition: transform 0.7s;
+}
